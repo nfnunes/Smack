@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41356DED8C971A092F6B9F2A /* Pods_WODit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373B74C6FD45577AC24D574F /* Pods_WODit.framework */; };
+		BC0FB3AB1DF4AC4600774A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB3AA1DF4AC4600774A38 /* AppDelegate.swift */; };
+		BC0FB3B01DF4AC4600774A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB3AE1DF4AC4600774A38 /* Main.storyboard */; };
+		BC0FB3B31DF4AC4600774A38 /* WODit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB3B11DF4AC4600774A38 /* WODit.xcdatamodeld */; };
+		BC0FB3B51DF4AC4600774A38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB3B41DF4AC4600774A38 /* Assets.xcassets */; };
+		BC0FB3B81DF4AC4600774A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB3B61DF4AC4600774A38 /* LaunchScreen.storyboard */; };
+		BC1C90381E073A3900A9E2D8 /* AmrapEditProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1C90371E073A3900A9E2D8 /* AmrapEditProtocol.swift */; };
+		BC3541431E45479400606476 /* MOVs.json in Resources */ = {isa = PBXBuildFile; fileRef = BC3541421E45479400606476 /* MOVs.json */; };
+		BC3683561E04DAD0006645E6 /* ForTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3683551E04DAD0006645E6 /* ForTimeController.swift */; };
+		BC3683581E057199006645E6 /* AmrapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3683571E057199006645E6 /* AmrapController.swift */; };
+		BC3A1DF21F27DB0F00770EA2 /* GoWODForTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3A1DF11F27DB0F00770EA2 /* GoWODForTimeVC.swift */; };
+		BC3A1DF61F27DF2200770EA2 /* EditAmrapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3A1DF51F27DF2200770EA2 /* EditAmrapVC.swift */; };
+		BC3A1DF81F27DFE200770EA2 /* EditTabataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3A1DF71F27DFE200770EA2 /* EditTabataVC.swift */; };
+		BC3F462D1E17E09B00B2DCBA /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3F462C1E17E09A00B2DCBA /* Exercise.swift */; };
+		BC3F462F1E17E2C200B2DCBA /* MovCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3F462E1E17E2C200B2DCBA /* MovCell.swift */; };
+		BC3F46311E17E37100B2DCBA /* MovLibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3F46301E17E37100B2DCBA /* MovLibraryVC.swift */; };
+		BC5940601DF76AA700716735 /* WodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59405F1DF76AA700716735 /* WodCell.swift */; };
+		BC5940621DF76E1F00716735 /* WodLibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5940611DF76E1F00716735 /* WodLibraryVC.swift */; };
+		BC5940641DF76EE200716735 /* WOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5940631DF76EE200716735 /* WOD.swift */; };
+		BC59D9E41E075F8F00445FCD /* EmomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59D9E31E075F8F00445FCD /* EmomController.swift */; };
+		BC866FCC1E25A90E00A8D54E /* WODs.json in Resources */ = {isa = PBXBuildFile; fileRef = BC866FCB1E25A90E00A8D54E /* WODs.json */; };
+		BCAA278B1DF9A81300A9F37D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCAA278A1DF9A81300A9F37D /* SwiftyJSON.framework */; };
+		BCBFE5A21E089C520056BC1F /* TabataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBFE5A11E089C520056BC1F /* TabataController.swift */; };
+		BCCE54F51F27E69E00B0CA75 /* GoWODAmrapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE54F41F27E69E00B0CA75 /* GoWODAmrapVC.swift */; };
+		BCCE54F71F27E71900B0CA75 /* GoWodEmomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE54F61F27E71900B0CA75 /* GoWodEmomVC.swift */; };
+		BCCE54F91F27E7B100B0CA75 /* MovVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE54F81F27E7B100B0CA75 /* MovVideoVC.swift */; };
+		BCD1EE8C1E0B4CF200C104D7 /* TabataEditProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD1EE8B1E0B4CF200C104D7 /* TabataEditProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC0FB3D01DF4BEC100774A38 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		28666140455E419EFE7DE825 /* Pods-WODit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WODit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WODit/Pods-WODit.debug.xcconfig"; sourceTree = "<group>"; };
+		373B74C6FD45577AC24D574F /* Pods_WODit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WODit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62964E44B31D0F873894E537 /* Pods-WODit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WODit.release.xcconfig"; path = "Pods/Target Support Files/Pods-WODit/Pods-WODit.release.xcconfig"; sourceTree = "<group>"; };
+		BC0FB3AA1DF4AC4600774A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC0FB3AF1DF4AC4600774A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC0FB3B21DF4AC4600774A38 /* WODit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WODit.xcdatamodel; sourceTree = "<group>"; };
+		BC0FB3B41DF4AC4600774A38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC0FB3B71DF4AC4600774A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC0FB3B91DF4AC4600774A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC1C90371E073A3900A9E2D8 /* AmrapEditProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmrapEditProtocol.swift; sourceTree = "<group>"; };
+		BC3541421E45479400606476 /* MOVs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MOVs.json; sourceTree = "<group>"; };
+		BC3683551E04DAD0006645E6 /* ForTimeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForTimeController.swift; sourceTree = "<group>"; };
+		BC3683571E057199006645E6 /* AmrapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmrapController.swift; sourceTree = "<group>"; };
+		BC3A1DF11F27DB0F00770EA2 /* GoWODForTimeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoWODForTimeVC.swift; sourceTree = "<group>"; };
+		BC3A1DF51F27DF2200770EA2 /* EditAmrapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAmrapVC.swift; sourceTree = "<group>"; };
+		BC3A1DF71F27DFE200770EA2 /* EditTabataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTabataVC.swift; sourceTree = "<group>"; };
+		BC3F462C1E17E09A00B2DCBA /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		BC3F462E1E17E2C200B2DCBA /* MovCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovCell.swift; sourceTree = "<group>"; };
+		BC3F46301E17E37100B2DCBA /* MovLibraryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovLibraryVC.swift; sourceTree = "<group>"; };
+		BC59405F1DF76AA700716735 /* WodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WodCell.swift; sourceTree = "<group>"; };
+		BC5940611DF76E1F00716735 /* WodLibraryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WodLibraryVC.swift; sourceTree = "<group>"; };
+		BC5940631DF76EE200716735 /* WOD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WOD.swift; sourceTree = "<group>"; };
+		BC59D9E31E075F8F00445FCD /* EmomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmomController.swift; sourceTree = "<group>"; };
+		BC866FCB1E25A90E00A8D54E /* WODs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WODs.json; sourceTree = "<group>"; };
+		BCAA27861DF7873900A9F37D /* WODit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WODit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCAA278A1DF9A81300A9F37D /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/WODit-bruhtocnkmuaqiequhhochmullet/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		BCBFE5A11E089C520056BC1F /* TabataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabataController.swift; sourceTree = "<group>"; };
+		BCCE54F41F27E69E00B0CA75 /* GoWODAmrapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoWODAmrapVC.swift; sourceTree = "<group>"; };
+		BCCE54F61F27E71900B0CA75 /* GoWodEmomVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoWodEmomVC.swift; sourceTree = "<group>"; };
+		BCCE54F81F27E7B100B0CA75 /* MovVideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovVideoVC.swift; sourceTree = "<group>"; };
+		BCD1EE8B1E0B4CF200C104D7 /* TabataEditProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabataEditProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC0FB3A41DF4AC4600774A38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAA278B1DF9A81300A9F37D /* SwiftyJSON.framework in Frameworks */,
+				41356DED8C971A092F6B9F2A /* Pods_WODit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		292B94D65AA4E8B76500B49C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCAA278A1DF9A81300A9F37D /* SwiftyJSON.framework */,
+				373B74C6FD45577AC24D574F /* Pods_WODit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8406584A65AC23BE6F8ECE45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28666140455E419EFE7DE825 /* Pods-WODit.debug.xcconfig */,
+				62964E44B31D0F873894E537 /* Pods-WODit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC0FB39E1DF4AC4600774A38 = {
+			isa = PBXGroup;
+			children = (
+				BC0FB3A91DF4AC4600774A38 /* WODit */,
+				BCAA27861DF7873900A9F37D /* WODit.app */,
+				8406584A65AC23BE6F8ECE45 /* Pods */,
+				292B94D65AA4E8B76500B49C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC0FB3A91DF4AC4600774A38 /* WODit */ = {
+			isa = PBXGroup;
+			children = (
+				BCAA27871DF78CED00A9F37D /* Resources */,
+				BC59405C1DF767EF00716735 /* Model */,
+				BC59405D1DF767FB00716735 /* VIew */,
+				BC59C2E41E101D0D007E3F39 /* Protocols */,
+				BC59405E1DF7680200716735 /* Controller */,
+				BC0FB3AA1DF4AC4600774A38 /* AppDelegate.swift */,
+				BC0FB3AE1DF4AC4600774A38 /* Main.storyboard */,
+				BC0FB3B41DF4AC4600774A38 /* Assets.xcassets */,
+				BC0FB3B61DF4AC4600774A38 /* LaunchScreen.storyboard */,
+				BC0FB3B91DF4AC4600774A38 /* Info.plist */,
+				BC0FB3B11DF4AC4600774A38 /* WODit.xcdatamodeld */,
+			);
+			path = WODit;
+			sourceTree = "<group>";
+		};
+		BC59405C1DF767EF00716735 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC5940631DF76EE200716735 /* WOD.swift */,
+				BC3F462C1E17E09A00B2DCBA /* Exercise.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BC59405D1DF767FB00716735 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				BC59405F1DF76AA700716735 /* WodCell.swift */,
+				BC3F462E1E17E2C200B2DCBA /* MovCell.swift */,
+			);
+			name = VIew;
+			sourceTree = "<group>";
+		};
+		BC59405E1DF7680200716735 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE54F81F27E7B100B0CA75 /* MovVideoVC.swift */,
+				BCCE54F61F27E71900B0CA75 /* GoWodEmomVC.swift */,
+				BCCE54F41F27E69E00B0CA75 /* GoWODAmrapVC.swift */,
+				BC3A1DF71F27DFE200770EA2 /* EditTabataVC.swift */,
+				BC3A1DF51F27DF2200770EA2 /* EditAmrapVC.swift */,
+				BC3A1DF11F27DB0F00770EA2 /* GoWODForTimeVC.swift */,
+				BC3683551E04DAD0006645E6 /* ForTimeController.swift */,
+				BC5940611DF76E1F00716735 /* WodLibraryVC.swift */,
+				BC3683571E057199006645E6 /* AmrapController.swift */,
+				BC59D9E31E075F8F00445FCD /* EmomController.swift */,
+				BCBFE5A11E089C520056BC1F /* TabataController.swift */,
+				BC3F46301E17E37100B2DCBA /* MovLibraryVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BC59C2E41E101D0D007E3F39 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC1C90371E073A3900A9E2D8 /* AmrapEditProtocol.swift */,
+				BCD1EE8B1E0B4CF200C104D7 /* TabataEditProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		BCAA27871DF78CED00A9F37D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC3541421E45479400606476 /* MOVs.json */,
+				BC866FCB1E25A90E00A8D54E /* WODs.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC0FB3A61DF4AC4600774A38 /* WODit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0FB3BC1DF4AC4600774A38 /* Build configuration list for PBXNativeTarget "WODit" */;
+			buildPhases = (
+				8744099E8488BC9BC1DD4D41 /* [CP] Check Pods Manifest.lock */,
+				BC0FB3A31DF4AC4600774A38 /* Sources */,
+				BC0FB3A41DF4AC4600774A38 /* Frameworks */,
+				BC0FB3A51DF4AC4600774A38 /* Resources */,
+				BC0FB3D01DF4BEC100774A38 /* Embed Frameworks */,
+				53B0224AC5248ACE759FE92D /* [CP] Embed Pods Frameworks */,
+				18E1A754983320D0F2BC6682 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WODit;
+			productName = WODit;
+			productReference = BCAA27861DF7873900A9F37D /* WODit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC0FB39F1DF4AC4600774A38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Nuno;
+				TargetAttributes = {
+					BC0FB3A61DF4AC4600774A38 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = QLW338ZPAQ;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BC0FB3A21DF4AC4600774A38 /* Build configuration list for PBXProject "WODit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC0FB39E1DF4AC4600774A38;
+			productRefGroup = BC0FB39E1DF4AC4600774A38;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC0FB3A61DF4AC4600774A38 /* WODit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC0FB3A51DF4AC4600774A38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC866FCC1E25A90E00A8D54E /* WODs.json in Resources */,
+				BC0FB3B81DF4AC4600774A38 /* LaunchScreen.storyboard in Resources */,
+				BC0FB3B51DF4AC4600774A38 /* Assets.xcassets in Resources */,
+				BC3541431E45479400606476 /* MOVs.json in Resources */,
+				BC0FB3B01DF4AC4600774A38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18E1A754983320D0F2BC6682 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WODit/Pods-WODit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53B0224AC5248ACE759FE92D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WODit/Pods-WODit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8744099E8488BC9BC1DD4D41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC0FB3A31DF4AC4600774A38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5940641DF76EE200716735 /* WOD.swift in Sources */,
+				BC59D9E41E075F8F00445FCD /* EmomController.swift in Sources */,
+				BC3F46311E17E37100B2DCBA /* MovLibraryVC.swift in Sources */,
+				BC3683561E04DAD0006645E6 /* ForTimeController.swift in Sources */,
+				BCCE54F51F27E69E00B0CA75 /* GoWODAmrapVC.swift in Sources */,
+				BC3A1DF81F27DFE200770EA2 /* EditTabataVC.swift in Sources */,
+				BC5940621DF76E1F00716735 /* WodLibraryVC.swift in Sources */,
+				BC3A1DF21F27DB0F00770EA2 /* GoWODForTimeVC.swift in Sources */,
+				BCBFE5A21E089C520056BC1F /* TabataController.swift in Sources */,
+				BC0FB3AB1DF4AC4600774A38 /* AppDelegate.swift in Sources */,
+				BC3F462F1E17E2C200B2DCBA /* MovCell.swift in Sources */,
+				BCCE54F71F27E71900B0CA75 /* GoWodEmomVC.swift in Sources */,
+				BC3A1DF61F27DF2200770EA2 /* EditAmrapVC.swift in Sources */,
+				BC3683581E057199006645E6 /* AmrapController.swift in Sources */,
+				BCD1EE8C1E0B4CF200C104D7 /* TabataEditProtocol.swift in Sources */,
+				BC5940601DF76AA700716735 /* WodCell.swift in Sources */,
+				BC0FB3B31DF4AC4600774A38 /* WODit.xcdatamodeld in Sources */,
+				BC1C90381E073A3900A9E2D8 /* AmrapEditProtocol.swift in Sources */,
+				BCCE54F91F27E7B100B0CA75 /* MovVideoVC.swift in Sources */,
+				BC3F462D1E17E09B00B2DCBA /* Exercise.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC0FB3AE1DF4AC4600774A38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC0FB3AF1DF4AC4600774A38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC0FB3B61DF4AC4600774A38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC0FB3B71DF4AC4600774A38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC0FB3BA1DF4AC4600774A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC0FB3BB1DF4AC4600774A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC0FB3BD1DF4AC4600774A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28666140455E419EFE7DE825 /* Pods-WODit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QLW338ZPAQ;
+				INFOPLIST_FILE = WODit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Nuno.WODit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC0FB3BE1DF4AC4600774A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62964E44B31D0F873894E537 /* Pods-WODit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QLW338ZPAQ;
+				INFOPLIST_FILE = WODit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Nuno.WODit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC0FB3A21DF4AC4600774A38 /* Build configuration list for PBXProject "WODit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0FB3BA1DF4AC4600774A38 /* Debug */,
+				BC0FB3BB1DF4AC4600774A38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0FB3BC1DF4AC4600774A38 /* Build configuration list for PBXNativeTarget "WODit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0FB3BD1DF4AC4600774A38 /* Debug */,
+				BC0FB3BE1DF4AC4600774A38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BC0FB3B11DF4AC4600774A38 /* WODit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BC0FB3B21DF4AC4600774A38 /* WODit.xcdatamodel */,
+			);
+			currentVersion = BC0FB3B21DF4AC4600774A38 /* WODit.xcdatamodel */;
+			path = WODit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BC0FB39F1DF4AC4600774A38 /* Project object */;
+}
