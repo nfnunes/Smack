@@ -70,8 +70,8 @@ class AuthService{
         ]
         
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (response) in
+            
             if response.result.error == nil{
-        
                 guard let data = response.data else { return }
                 do{
                     let json = try JSON(data: data)
@@ -108,37 +108,27 @@ class AuthService{
             
             if response.result.error == nil{
                 guard let data = response.data else { return }
-                if let json = try? JSON(data: data) {
+                do{
+                    let json = try JSON(data: data)
+                    print(json)
                     let id = json["_id"].stringValue
                     let color = json["avatarColor"].stringValue
                     let avatarName = json["avatarName"].stringValue
                     let email = json["email"].stringValue
                     let name = json["name"].stringValue
-                    
+
                     UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
-                    
-                    completion(true)
-//                do{
-//                    let json = try JSON(data: data)
-//                    print(json)
-//                    let id = json["_id"].stringValue
-//                    let color = json["avatarColor"].stringValue
-//                    let avatarName = json["avatarName"].stringValue
-//                    let email = json["email"].stringValue
-//                    let name = json["name"].stringValue
-//
-//                    UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
-//                }catch{
-//                    print("error with json data")
-//                }
-//                completion(true)
+                }catch{
+                    print("error with json data")
+                }
+                completion(true)
             } else {
                 completion(false)
                 debugPrint(response.result.error as Any)
             }
         }
     }
-    }
+    
     
     
     

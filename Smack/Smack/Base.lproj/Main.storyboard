@@ -121,7 +121,7 @@
                                 <rect key="frame" x="281" y="83" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cwS-aF-nxX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cwS-aF-nxX" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="16" y="576" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="NVj-gy-Dag"/>
@@ -439,7 +439,7 @@
                                     <action selector="pickAvatarPressed:" destination="ZYZ-sj-Kf0" eventType="touchUpInside" id="KZ4-U0-rMb"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="sFe-ZH-pfl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="sFe-ZH-pfl" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="299" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="T42-EC-wiJ"/>
@@ -461,10 +461,15 @@
                                     <action selector="pickBgColorPressed:" destination="ZYZ-sj-Kf0" eventType="touchUpInside" id="i1e-GX-tc1"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="vXu-fu-J9v">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ie5-Be-DzG" firstAttribute="centerX" secondItem="bJH-ZL-D7h" secondAttribute="centerX" id="3er-28-iLo"/>
+                            <constraint firstItem="vXu-fu-J9v" firstAttribute="centerY" secondItem="bJH-ZL-D7h" secondAttribute="centerY" constant="-100" id="3jm-JO-TB3"/>
                             <constraint firstItem="Ie5-Be-DzG" firstAttribute="top" secondItem="ygX-Dx-zYZ" secondAttribute="bottom" constant="4" id="6K2-EL-ufy"/>
                             <constraint firstItem="M0g-55-VdU" firstAttribute="top" secondItem="iZj-yu-4Te" secondAttribute="bottom" constant="40" id="6fY-eF-aH4"/>
                             <constraint firstItem="CKr-vc-AMM" firstAttribute="top" secondItem="mkj-Ad-JEL" secondAttribute="bottom" constant="8" id="Hp2-3T-Epu"/>
@@ -477,6 +482,7 @@
                             <constraint firstItem="ygX-Dx-zYZ" firstAttribute="top" secondItem="sFe-ZH-pfl" secondAttribute="top" id="eve-iE-wkM"/>
                             <constraint firstItem="iZj-yu-4Te" firstAttribute="centerX" secondItem="bJH-ZL-D7h" secondAttribute="centerX" id="jst-MW-NCw"/>
                             <constraint firstItem="CKr-vc-AMM" firstAttribute="trailing" secondItem="bJH-ZL-D7h" secondAttribute="trailingMargin" id="sfg-az-VNG"/>
+                            <constraint firstItem="vXu-fu-J9v" firstAttribute="centerX" secondItem="bJH-ZL-D7h" secondAttribute="centerX" id="u4V-Lw-wc0"/>
                             <constraint firstItem="pYC-g5-DWP" firstAttribute="top" secondItem="taP-Pj-fBZ" secondAttribute="bottom" constant="20" id="wVo-WK-aqJ"/>
                             <constraint firstItem="sFe-ZH-pfl" firstAttribute="top" secondItem="M0g-55-VdU" secondAttribute="bottom" constant="40" id="yA6-hF-d4l"/>
                         </constraints>
@@ -484,6 +490,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="uye-ex-Nq4" id="wYu-Le-EAb"/>
                         <outlet property="passTxt" destination="cxL-FB-2ej" id="Sn0-iU-yiP"/>
+                        <outlet property="spinner" destination="vXu-fu-J9v" id="VkP-s4-z2u"/>
                         <outlet property="userImg" destination="sFe-ZH-pfl" id="x2y-V0-ZoP"/>
                         <outlet property="usernameTxt" destination="cO1-10-cfw" id="N0A-54-vCU"/>
                         <segue destination="8Nj-kz-i7w" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="5aq-MN-xtA"/>
@@ -526,8 +533,8 @@
                                     <constraint firstAttribute="width" constant="160" id="cbu-Ho-mlU"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="dark"/>
+                                    <segment title="light"/>
                                 </segments>
                                 <color key="tintColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
