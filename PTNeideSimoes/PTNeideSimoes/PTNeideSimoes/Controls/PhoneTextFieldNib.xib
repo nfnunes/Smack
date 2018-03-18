@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-BlackOblique</string>
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneTextFieldNib" customModule="PTNeideSimoes" customModuleProvider="target">
+            <connections>
+                <outlet property="invalidMobile" destination="Rsv-j2-5x6" id="z94-t1-MdB"/>
+                <outlet property="phoneTextField" destination="hUD-ux-aWD" id="STp-hi-ds2"/>
+                <outlet property="phoneTextFieldNib" destination="iN0-l3-epB" id="2eF-BM-wiH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Telemóvel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUD-ux-aWD">
+                    <rect key="frame" x="10" y="12.5" width="355" height="29"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="yig-VV-qap"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                    <connections>
+                        <action selector="userPressedMobile:" destination="-1" eventType="editingDidBegin" id="xRn-gP-o5O"/>
+                        <action selector="verifyPhone:" destination="-1" eventType="editingDidEnd" id="6uC-t0-yhQ"/>
+                    </connections>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uq7-vO-imE">
+                    <rect key="frame" x="0.0" y="41.5" width="375" height="2"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.098039215690000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="2Ab-ne-AgB"/>
+                    </constraints>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telemóvel inválido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsv-j2-5x6">
+                    <rect key="frame" x="279" y="5" width="96" height="15.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-BlackOblique" family="Avenir" pointSize="11"/>
+                    <color key="textColor" red="0.87843137250000003" green="0.098039215690000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Uq7-vO-imE" firstAttribute="top" secondItem="hUD-ux-aWD" secondAttribute="bottom" id="4gk-Ac-tWl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Uq7-vO-imE" secondAttribute="trailing" id="8Wp-UB-FyR"/>
+                <constraint firstItem="hUD-ux-aWD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Dle-MO-PhT"/>
+                <constraint firstItem="Rsv-j2-5x6" firstAttribute="trailing" secondItem="Uq7-vO-imE" secondAttribute="trailing" id="IIc-xa-BSa"/>
+                <constraint firstItem="Rsv-j2-5x6" firstAttribute="centerY" secondItem="hUD-ux-aWD" secondAttribute="top" id="LsK-KA-6vf"/>
+                <constraint firstItem="hUD-ux-aWD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WhG-GW-Vdp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hUD-ux-aWD" secondAttribute="trailing" constant="10" id="f2C-F9-nTx"/>
+                <constraint firstItem="Uq7-vO-imE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fit-gY-gcO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="26.5" y="358"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Lista Alunos View Controller-->
+        <scene sceneID="qYs-1k-sxz">
+            <objects>
+                <viewController storyboardIdentifier="ListaAlunosViewController" id="7ed-ZO-BK3" customClass="ListaAlunosViewController" customModule="PTNeideSimoes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="ListaAlunos" id="TV0-qM-eGD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mle-NI-Nrv" customClass="GradientView" customModule="PTNeideSimoes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZt-L8-ACw">
+                                        <rect key="frame" x="13" y="26" width="36" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="EHv-nA-Xwu"/>
+                                            <constraint firstAttribute="width" constant="36" id="SjQ-fR-3wn"/>
+                                        </constraints>
+                                        <state key="normal" image="menuBtn"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PT Neide Simões" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rQ-7D-N4w">
+                                        <rect key="frame" x="91.5" y="22" width="192" height="33"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
+                                        <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YZt-L8-ACw" firstAttribute="leading" secondItem="Mle-NI-Nrv" secondAttribute="leading" constant="13" id="2PG-Wr-i5W"/>
+                                    <constraint firstItem="6rQ-7D-N4w" firstAttribute="centerX" secondItem="Mle-NI-Nrv" secondAttribute="centerX" id="OpP-Sn-5oI"/>
+                                    <constraint firstItem="YZt-L8-ACw" firstAttribute="centerY" secondItem="Mle-NI-Nrv" secondAttribute="centerY" id="Qxp-B7-l2q"/>
+                                    <constraint firstItem="6rQ-7D-N4w" firstAttribute="centerY" secondItem="Mle-NI-Nrv" secondAttribute="centerY" id="dLg-QN-OfH"/>
+                                    <constraint firstAttribute="height" constant="77" id="s5v-Nn-TRH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mle-NI-Nrv" firstAttribute="trailing" secondItem="Gnq-hK-G42" secondAttribute="trailing" id="A9K-1h-B4u"/>
+                            <constraint firstItem="Mle-NI-Nrv" firstAttribute="leading" secondItem="Gnq-hK-G42" secondAttribute="leading" id="X4n-HH-HhZ"/>
+                            <constraint firstItem="Mle-NI-Nrv" firstAttribute="top" secondItem="TV0-qM-eGD" secondAttribute="top" id="diM-WI-chr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gnq-hK-G42"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuUIButton" destination="YZt-L8-ACw" id="wdU-37-aJ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BkC-4L-Rho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79" y="147"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menuBtn" width="36" height="24"/>
+    </resources>
+</document>
