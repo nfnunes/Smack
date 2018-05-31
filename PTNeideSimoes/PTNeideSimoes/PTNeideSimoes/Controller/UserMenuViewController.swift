@@ -53,9 +53,10 @@ class UserMenuViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0{
-            let storyboard = UIStoryboard(name: "ListaAlunos", bundle: Bundle.main)
-            let ListaAlunosViewController = storyboard.instantiateViewController(withIdentifier: "ListaAlunosViewController")
-            present(ListaAlunosViewController, animated: true, completion: nil)
+            initStoryboard(controller: ListaAlunosViewController , storyboardName: "ListaAlunos")
+//            let storyboard = UIStoryboard(name: "ListaAlunos", bundle: Bundle.main)
+//            let ListaAlunosViewController = storyboard.instantiateViewController(withIdentifier: "ListaAlunosViewController")
+//            present(ListaAlunosViewController, animated: true, completion: nil)
         }
     }
 
@@ -84,6 +85,15 @@ class UserMenuViewController: UIViewController, UITableViewDelegate, UITableView
                 self.welcomeLabel.text = ""
             }
         }
+    }
+    
+    func initStoryboard(controller: UIViewController, storyboardName: String){
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        let childController = storyboard.instantiateInitialViewController() as UIViewController!
+        addChildViewController(childController!)
+        childController?.view.backgroundColor = UIColor.red
+        controller.view.addSubview((childController?.view)!)
+        controller.didMove(toParentViewController: childController)
     }
     
     

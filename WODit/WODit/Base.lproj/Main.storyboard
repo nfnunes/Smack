@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="G45-SV-hlW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="G45-SV-hlW">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Avenir.ttc">
-            <string>Avenir-Heavy</string>
-            <string>Avenir-Light</string>
-            <string>Avenir-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Wod LibraryVC-->
         <scene sceneID="q6a-Na-rua">
@@ -271,13 +264,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6IA-pn-T70">
-                                                    <rect key="frame" x="35" y="11" width="225" height="54"/>
+                                                    <rect key="frame" x="35" y="11" width="225" height="55"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                                     <color key="textColor" red="0.94901960780000005" green="0.37647058820000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lV-x0-0Od">
-                                                    <rect key="frame" x="270" y="20.5" width="35" height="35"/>
+                                                    <rect key="frame" x="270" y="21" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="YRU-XD-Hge"/>
                                                         <constraint firstAttribute="height" constant="35" id="ztE-Vp-g94"/>
@@ -288,13 +281,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label3" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xll-Bg-29M">
-                                                    <rect key="frame" x="20" y="71" width="277" height="24"/>
+                                                    <rect key="frame" x="20" y="72" width="277" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
                                                     <color key="textColor" red="0.30588235289999999" green="0.71764705880000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q2-4v-C55">
-                                                    <rect key="frame" x="20" y="95" width="51" height="24"/>
+                                                    <rect key="frame" x="20" y="95.5" width="50.5" height="23.5"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                     </accessibility>
@@ -1003,9 +996,7 @@
                                             <color key="titleColor" red="0.94901960780000005" green="0.37647058820000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="5c7-li-vJk" kind="show" id="wqx-3a-oIQ">
-                                                <nil key="action"/>
-                                            </segue>
+                                            <segue destination="5c7-li-vJk" kind="show" id="wqx-3a-oIQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmg-ds-Y5i">
@@ -1015,9 +1006,7 @@
                                             <color key="titleColor" red="0.94901960780000005" green="0.37647058820000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="mfc-JB-WxL" kind="show" id="09k-6r-o7d">
-                                                <nil key="action"/>
-                                            </segue>
+                                            <segue destination="mfc-JB-WxL" kind="show" id="09k-6r-o7d"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbc-wA-Ff8">
@@ -1027,9 +1016,7 @@
                                             <color key="titleColor" red="0.94901960780000005" green="0.37647058820000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="JNp-M6-52q" kind="show" id="in2-8q-TPu">
-                                                <nil key="action"/>
-                                            </segue>
+                                            <segue destination="JNp-M6-52q" kind="show" id="in2-8q-TPu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IB7-MW-wJ7">
@@ -1039,9 +1026,7 @@
                                             <color key="titleColor" red="0.94901960780000005" green="0.37647058820000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="I0f-Pk-ZFS" kind="show" id="zTT-AF-0MD">
-                                                <nil key="action"/>
-                                            </segue>
+                                            <segue destination="I0f-Pk-ZFS" kind="show" id="zTT-AF-0MD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1094,9 +1079,7 @@
                                                     </attributedString>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="mfc-JB-WxL" kind="show" id="H8Q-cJ-jQC">
-                                                        <nil key="action"/>
-                                                    </segue>
+                                                    <segue destination="mfc-JB-WxL" kind="show" id="H8Q-cJ-jQC"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pdZ-Lx-eZi">
@@ -1113,9 +1096,7 @@
                                                     </attributedString>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="mfc-JB-WxL" kind="show" id="ziY-r2-hbN">
-                                                        <nil key="action"/>
-                                                    </segue>
+                                                    <segue destination="mfc-JB-WxL" kind="show" id="ziY-r2-hbN"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ET-7i-1Qo">
@@ -1132,9 +1113,7 @@
                                                     </attributedString>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="JNp-M6-52q" kind="show" id="FaT-C4-2EV">
-                                                        <nil key="action"/>
-                                                    </segue>
+                                                    <segue destination="JNp-M6-52q" kind="show" id="FaT-C4-2EV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iYf-c0-U3x">
@@ -1151,9 +1130,7 @@
                                                     </attributedString>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="I0f-Pk-ZFS" kind="show" id="hHB-95-qwN">
-                                                        <nil key="action"/>
-                                                    </segue>
+                                                    <segue destination="I0f-Pk-ZFS" kind="show" id="hHB-95-qwN"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1255,9 +1232,7 @@
                                                     </attributedString>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="5c7-li-vJk" kind="show" id="QRw-4J-qfk">
-                                                        <nil key="action"/>
-                                                    </segue>
+                                                    <segue destination="5c7-li-vJk" kind="show" id="QRw-4J-qfk"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AN6-HM-3kR">
@@ -1289,9 +1264,7 @@
                                                     </attributedString>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="JNp-M6-52q" kind="show" id="ITV-q6-SeU">
-                                                        <nil key="action"/>
-                                                    </segue>
+                                                    <segue destination="JNp-M6-52q" kind="show" id="ITV-q6-SeU"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rtv-fA-Ik7">
@@ -1308,9 +1281,7 @@
                                                     </attributedString>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="I0f-Pk-ZFS" kind="show" id="7ia-Sk-TQp">
-                                                        <nil key="action"/>
-                                                    </segue>
+                                                    <segue destination="I0f-Pk-ZFS" kind="show" id="7ia-Sk-TQp"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1542,9 +1513,7 @@
                                                             </attributedString>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="5c7-li-vJk" kind="show" id="gIy-yx-V6p">
-                                                                <nil key="action"/>
-                                                            </segue>
+                                                            <segue destination="5c7-li-vJk" kind="show" id="gIy-yx-V6p"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nfE-Vo-8rn">
@@ -1561,9 +1530,7 @@
                                                             </attributedString>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="mfc-JB-WxL" kind="show" id="ZK8-pl-QQw">
-                                                                <nil key="action"/>
-                                                            </segue>
+                                                            <segue destination="mfc-JB-WxL" kind="show" id="ZK8-pl-QQw"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q2c-Kp-aKv">
@@ -1595,9 +1562,7 @@
                                                             </attributedString>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="I0f-Pk-ZFS" kind="show" id="7ew-xx-DAb">
-                                                                <nil key="action"/>
-                                                            </segue>
+                                                            <segue destination="I0f-Pk-ZFS" kind="show" id="7ew-xx-DAb"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1720,9 +1685,7 @@
                                                             </attributedString>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="5c7-li-vJk" kind="show" id="tJE-TE-NfB">
-                                                                <nil key="action"/>
-                                                            </segue>
+                                                            <segue destination="5c7-li-vJk" kind="show" id="tJE-TE-NfB"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rql-hl-dRU">
@@ -1739,9 +1702,7 @@
                                                             </attributedString>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="mfc-JB-WxL" kind="show" id="w3B-5A-EMF">
-                                                                <nil key="action"/>
-                                                            </segue>
+                                                            <segue destination="mfc-JB-WxL" kind="show" id="w3B-5A-EMF"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tRn-1h-Fpa">
@@ -1758,9 +1719,7 @@
                                                             </attributedString>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="JNp-M6-52q" kind="show" id="aez-8M-BC9">
-                                                                <nil key="action"/>
-                                                            </segue>
+                                                            <segue destination="JNp-M6-52q" kind="show" id="aez-8M-BC9"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tfk-03-Q11">
